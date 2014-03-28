@@ -1,0 +1,13 @@
+echo "Compiling"
+cd src
+javac -cp .:../lib/junit-4.11.jar -d ../classes_test com/chikka/csg/tests/RSATests.java
+
+if [ $? -eq 0 ]; then
+    echo "Compile success!"
+    echo "Running tests..."
+    cd ../classes_test
+    java -cp .:../lib/junit-4.11.jar:../lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore com.chikka.csg.tests.RSATests
+    echo "Tests done"
+else
+    echo "Compile failed."
+fi

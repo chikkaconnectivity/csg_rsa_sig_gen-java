@@ -1,4 +1,4 @@
-package com.chikka.csg;
+package com.chikka.csg.api;
 
 import java.security.Signature;
 import java.security.SignatureException;
