@@ -10,7 +10,9 @@ body requests to be sent to the CSG.
 Import or copy the contents of the ChikkaRSASigner.java file in your code and
 simply use it as shown below:
 
-    String signature = ChikkaRSASigner.sign("my message", new File("/home/user/myprivkey.der");
+```java
+String signature = ChikkaRSASigner.sign("my message", new File("/home/user/myprivkey.der");
+```
 
 ## Notes
 
@@ -35,3 +37,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
