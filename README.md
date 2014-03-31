@@ -7,10 +7,12 @@ body requests to be sent to the CSG.
 
 ## Usage
 
-Import or copy the contents of the ChikkaRSASigner.java file in your code and
-simply use it as shown below:
+Just grab the latest JAR file and include it in your class path; latest version
+is v0.1.0. import `com.chikka.csg.api.ChikkaRSASigner`. Then,
 
 ```java
+import com.chikka.csg.api.ChikkaRSASigner;
+...
 String signature = ChikkaRSASigner.sign("my message", new File("/home/user/myprivkey.der");
 ```
 
