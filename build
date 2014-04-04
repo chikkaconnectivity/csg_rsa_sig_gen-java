@@ -1,8 +1,9 @@
 echo "Compiling..."
 cd src
 javac -d ../classes com/chikka/csg/api/ChikkaRSASigner.java
+javac -d ../classes util/Base64.java
 echo "Compilation done!"
 echo "Building v$1"
 cd ../classes
-jar cvf ../bin/chikka-rsa-signer-v$1jar com/
+jar cvf ../bin/chikka-rsa-signer-v$1.jar com/ util/
 echo "Build done!"
